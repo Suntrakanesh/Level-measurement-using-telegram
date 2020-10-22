@@ -65,24 +65,23 @@ void loop() {
 	
 	// a variable to store telegram message data
 	TBMessage msg;
+	
+	
+       if (distance>=3000) {        // if the received message is "LIGHT OFF"...
+			                              
+	  myBot.sendMessage(msg.sender.id, "Alert : Petrol Bunk 1 needs to refilled"); // notify the sender
+		
+            }
 
 	// if there is an incoming message...
 	if (myBot.getNewMessage(msg)) {
+		
 
-		if (msg.text.equalsIgnoreCase("LIGHT ON")) {              // if the received message is "LIGHT ON"...
-			digitalWrite(led, LOW);                               // turn on the LED (inverted logic!)
-			myBot.sendMessage(msg.sender.id, "Light is now ON");  // notify the sender
+		if (msg.text.equalsIgnoreCase("Bunk 1 Update me")) {              // if the received message is "LIGHT ON"...
+			                              
+			myBot.sendMessage(msg.sender.id,distance);  // notify the sender
 		}
-		else if (msg.text.equalsIgnoreCase("LIGHT OFF")) {        // if the received message is "LIGHT OFF"...
-			digitalWrite(led, HIGH);                              // turn off the led (inverted logic!)
-			myBot.sendMessage(msg.sender.id, "Light is now OFF"); // notify the sender
-		}
-		else {                                                    // otherwise...
-			// generate the message for the sender
-			String reply;
-			reply = (String)"Welcome " + msg.sender.username + (String)". Try LIGHT ON or LIGHT OFF.";
-			myBot.sendMessage(msg.sender.id, reply);             // and send it
-		}
+		
 	}
 	// wait 500 milliseconds
 	delay(500);
