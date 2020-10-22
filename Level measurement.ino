@@ -17,12 +17,21 @@ String pass = "myPassword"; // REPLACE myPassword YOUR WIFI PASSWORD, IF ANY
 String token = "myToken";   // REPLACE myToken WITH YOUR TELEGRAM BOT TOKEN
 uint8_t led = 2;            // the onboard ESP8266 LED.    
                             // If you have a NodeMCU you can use the BUILTIN_LED pin
-                            // (replace 2 with BUILTIN_LED)							
+                            // (replace 2 with BUILTIN_LED)	
+const int trigP = 2;  //D4 Or GPIO-2 of nodemcu
+const int echoP = 0;  //D3 Or GPIO-0 of nodemcu
+
+long duration;
+int distance;
+
 
 void setup() {
 	// initialize the Serial
 	Serial.begin(115200);
 	Serial.println("Starting TelegramBot...");
+	
+	pinMode(trigP, OUTPUT);  // Sets the trigPin as an Output
+        pinMode(echoP, INPUT);   // Sets the echoPin as an Input
 
 	// connect the ESP8266 to the desired access point
 	myBot.wifiConnect(ssid, pass);
@@ -43,6 +52,17 @@ void setup() {
 }
 
 void loop() {
+	
+       digitalWrite(trigP, LOW);   // Makes trigPin low
+       delayMicroseconds(2);       // 2 micro second delay 
+
+       digitalWrite(trigP, HIGH);  // tigPin high
+       delayMicroseconds(10);      // trigPin high for 10 micro seconds
+       digitalWrite(trigP, LOW);   // trigPin low
+
+       duration = pulseIn(echoP, HIGH);   //Read echo pin, time in microseconds
+       distance= duration*0.034/2;        //Calculating actual/real distance
+	
 	// a variable to store telegram message data
 	TBMessage msg;
 
