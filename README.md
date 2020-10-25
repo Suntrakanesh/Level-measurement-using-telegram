@@ -25,6 +25,6 @@ Our aim is to design a product which measures the level of petrol using sensor a
 
 ## License
 
-MIT © 
+MIT © [Suntrakanesh](https://github.com/Suntrakanesh/Level-measurement-using-telegram/blob/main/LICENSE)
 
 
