@@ -1,4 +1,4 @@
-# Compactable level measurement and forewarning in Petrol Bunk using Telegram
+# Compactible level measurement and forewarning in Petrol Bunk using Telegram
 
 ## Introduction
 
