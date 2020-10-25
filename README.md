@@ -23,4 +23,8 @@ Our aim is to design a product which measures the level of petrol using sensor a
 
 <img src="https://user-images.githubusercontent.com/64604283/97111427-b772e380-1704-11eb-8891-e1a2cea91d4e.jpeg" alt="Telegram Bot" width="400" height="600">
 
+## License
+
+MIT © 
+
 
