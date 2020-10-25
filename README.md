@@ -12,7 +12,9 @@ Our aim is to design a product which measures the level of petrol using sensor a
 - Ultrasonic sensor ( HC - SR04 )
 - Telegram App
 
-**Visit this webite to create the telegram bot :** [Creating the Telegram Bot](https://core.telegram.org/bots)
+**Visit this webite to create the telegram bot :** <a href="https://core.telegram.org/bots" target="_blank">
+  <img align="center" alt="Creating the telegram bot" width="120px" src="https://user-images.githubusercontent.com/64604283/97112738-f2c4e080-170b-11eb-99cb-6d6250e2798b.png" />
+</a><br/>
 
 ## Connections :
 
