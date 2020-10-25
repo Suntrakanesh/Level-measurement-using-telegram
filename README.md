@@ -21,6 +21,6 @@ Our aim is to design a product which measures the level of petrol using sensor a
 
 ## Sample Output
 
-<img align="left" alt="GIF" src="https://user-images.githubusercontent.com/64604283/97108133-8d63f600-16f1-11eb-9b2e-0179984ccc37.jpg" width="450" height="600" /> 
+![Telegram Bot](https://user-images.githubusercontent.com/64604283/97111427-b772e380-1704-11eb-8891-e1a2cea91d4e.jpeg)
 
 
