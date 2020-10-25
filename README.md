@@ -17,6 +17,6 @@ The objective of this model is to make a compact level measurement device to mea
 
 ## Sample Output
 
-<img align="right" alt="GIF" src="https://user-images.githubusercontent.com/64604283/97108133-8d63f600-16f1-11eb-9b2e-0179984ccc37.jpg" width="450" height="550" /> 
+<img align="left" alt="GIF" src="https://user-images.githubusercontent.com/64604283/97108133-8d63f600-16f1-11eb-9b2e-0179984ccc37.jpg" width="450" height="550" /> 
 
 
