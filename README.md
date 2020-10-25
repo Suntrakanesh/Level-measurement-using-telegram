@@ -12,6 +12,8 @@ Our aim is to design a product which measures the level of petrol using sensor a
 - Ultrasonic sensor ( HC - SR04 )
 - Telegram App
 
+**Visit this webite to create the telegram bot :** [Creating the Telegram Bot](https://core.telegram.org/bots)
+
 ## Connections :
 
 - Vcc pin of Ultrasonic sensor to 3V3 pin
