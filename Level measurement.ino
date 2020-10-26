@@ -3,7 +3,7 @@ CTBot myBot;
 
 String ssid = "<ssid>";     // REPLACE mySSID WITH YOUR WIFI SSID
 String pass = "<password>"; // REPLACE myPassword YOUR WIFI PASSWORD, IF ANY
-String token = "<token>";   // REPLACE myToken WITH YOUR TELEGRAM BOT TOKEN
+String token = "<token>";   // REPLACE myToken WITH YOUR TELEGRAM BOT TOKEN , you can get this token in Botfather
 uint8_t led = 2;            // the onboard ESP8266 LED.    
                             // If you have a NodeMCU you can use the BUILTIN_LED pin
                             // (replace 2 with BUILTIN_LED)  
@@ -59,7 +59,7 @@ void loop() {
        Serial.print("\nNew data \n");
        Serial.println(distance);
 	
-       if (distance<=8) {        // if the received message is "LIGHT OFF"...
+       if (distance<=8) {        
                                     
              myBot.sendMessage(msg.sender.id, "Alert : Petrol Bunk 1 needs to refilled"); // notify the sender
     
