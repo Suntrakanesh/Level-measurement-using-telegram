@@ -1,5 +1,8 @@
 # Compactible level measurement and forewarning in Petrol Bunk using Telegram
 
+<img src="https://user-images.githubusercontent.com/64604283/97145690-a077d400-178c-11eb-8184-5170af182314.jpg" alt="Telegram Bot" width="600" height="430">
+
+
 ## Introduction
 
 Let us consider a town having at least 10 petrol filling stations and for sure there will be a zonal head or manager who monitors and manages the oil supply to this fuel stations.The petrol level in the container is measured by some classic methods and the measured data is known only to the petrol station dealer and communicated to the manager through normal phone call and Petrol is refilled.The actual problem is when the demand increases and fuel gets exhausted. There may also delay in refill due to some truck delay struck in Traffic or due to some improper communication.To overcome this and to introduce automation we came up with this product idea.
