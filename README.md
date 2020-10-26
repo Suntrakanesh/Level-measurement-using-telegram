@@ -12,16 +12,21 @@ Our aim is to design a product which measures the level of petrol using sensor a
 - Ultrasonic sensor ( HC - SR04 )
 - Telegram App
 
-## Visit this website to create the telegram bot : <a href="https://core.telegram.org/bots" target="_blank">
-  <img align="center" alt="Creating the telegram bot" width="80px" src="https://user-images.githubusercontent.com/64604283/97112738-f2c4e080-170b-11eb-99cb-6d6250e2798b.png" />
-</a><br/>
-
 ## Connections :
 
 - Vcc pin of Ultrasonic sensor to 3V3 pin
 - Gnd pin of Ultrasonic sensor to Gnd pin of nodeMCU
 - Echo pin to D3 pin of nodeMCU
 - Trig pin to D4 pin of nodeMCU
+
+## Working :
+
+Here Ultrasonic sensor is used to measure the level of the petrol in particular petrol bunk. Ultrasonic sensor is widely used contactless distance measurement device. It is fixed at the top of the storage tank. It will send an ultrasonic wave which in turn hit on the surface of petrol and bounce back to sensor. The speed of the ultrasonic wave is constant, and time taken by wave to bounce back is directly proportional to distance. By this methodology, the level of the fuel is measured. Here, one needs to note that the distance measured is the air-gap of fuel tank , not a actual level of the fuel. In order to measure the level of the fuel , the mesured value should be subracted from entire depth of storage tank.  
+
+## Visit this website to create the telegram bot : <a href="https://core.telegram.org/bots" target="_blank">
+  <img align="center" alt="Creating the telegram bot" width="80px" src="https://user-images.githubusercontent.com/64604283/97112738-f2c4e080-170b-11eb-99cb-6d6250e2798b.png" />
+</a><br/>
+
 
 ## Sample Output
 
